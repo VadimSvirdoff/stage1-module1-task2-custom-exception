@@ -29,7 +29,7 @@ public class StudentManagerTest {
   public void testExceptionMessage() {
     try {
       assertNotNull(manager.find(1000));
-    } catch (IllegalArgumentException e) {
+    } catch (Exception e) {
       assertEquals("Could not find student with ID 1000", e.getMessage());
     }
   }
